@@ -16,7 +16,7 @@ public class Driver {
 								" which takes " + i.getDuration() + " weeks." + 
 								"\nThe instructor of this course is " + i.getInstructorName().getFirstName() + " " + i.getInstructorName().getLastName() +
 								" who is " + i.getInstructorName().getStatus(i.getInstructorName().getYearOfExperience()) +
-								" with " + i.getInstructorName().getYearOfExperience() + " years of experience." + 
+								" with " + i.getInstructorName().getYearOfExperience() + " year(s) of experience." + 
 								"\nThe phone number of instructor is " + i.getInstructorName().getPhoneNumber());
 		}
 	}
@@ -33,10 +33,9 @@ public class Driver {
 								" which takes " + i.getDuration() + " weeks." + 
 								"\nThe instructor of this course is " + i.getInstructorName().getFirstName() + " " + i.getInstructorName().getLastName() +
 								" who is " + i.getInstructorName().getStatus(i.getInstructorName().getYearOfExperience()) +
-								" with " + i.getInstructorName().getYearOfExperience() + " years of experience." + 
+								" with " + i.getInstructorName().getYearOfExperience() + " year(s) of experience." + 
 								"\nThe phone number of instructor is " + i.getInstructorName().getPhoneNumber());
-				
-				break;
+				counter--;
 			}
 		counter++;	
 		}
