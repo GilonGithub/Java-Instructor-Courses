@@ -66,7 +66,8 @@ public class Instructor {
 		case 2: case 3: case 4: status = "Intermediate"; break;
 	
 		default:
-			if(yearOfExperience > 4) status = "Senior"; break;
+			if(yearOfExperience > 4) status = "Senior"; 
+			else status = "Unknown"; break;
 		}
 		
 		return status;
