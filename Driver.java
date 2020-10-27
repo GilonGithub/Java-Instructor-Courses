@@ -23,7 +23,7 @@ public class Driver {
 	
 	public static void print(ArrayList<Course> courses, String instructor) {
 		
-		byte counter = 0;
+		boolean isFound = false;
 		
 		for(Course i: courses) {
 			
@@ -35,12 +35,12 @@ public class Driver {
 								" who is " + i.getInstructorName().getStatus(i.getInstructorName().getYearOfExperience()) +
 								" with " + i.getInstructorName().getYearOfExperience() + " year(s) of experience." + 
 								"\nThe phone number of instructor is " + i.getInstructorName().getPhoneNumber());
-				counter--;
+				isFound = true;
 			}
-		counter++;	
+
 		}
 		
-		if(counter == courses.size())
+		if(!isFound)
 			System.err.println("This instructor does not teach any courses.");
 			
 	}
